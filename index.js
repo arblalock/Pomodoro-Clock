@@ -11,7 +11,9 @@ const RESET = "RESET"
 const changeSession = (incdec) => ({type: SESSION, incdec})
 const changeBreak = (incdec) => ({type: BREAK, incdec})
 const changeMode = (sb) => ({type: MODE, sb})
+
 const changeCount = (isCounting) => ({type: COUNTDOWN, isCounting})
+
 const resetAll = () => ({type: RESET})
 
 const initial_state = {
@@ -66,7 +68,10 @@ class Break extends React.Component {
   }
 
   handleClick(incdec) {
-    if (this.props.counting == false && (this.props.break < 60 && this.props.break > 1)) {
+    if (this.props.counting == false) {
+      if ((this.props.break >= 60 && incdec == 'inc' || this.props.break <= 1 && incdec == 'dec')) {
+        return
+      }
       this.props.changeBreak(incdec)
     }
   }
@@ -92,7 +97,10 @@ class Session extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick(incdec) {
-    if (this.props.counting == false && (this.props.session > 1 && this.props.session < 60)) {
+    if (this.props.counting == false) {
+      if ((this.props.session >= 60 && incdec == 'inc' || this.props.session <= 1 && incdec == 'dec')) {
+        return
+      }
       this.props.changeSession(incdec)
     }
   }
