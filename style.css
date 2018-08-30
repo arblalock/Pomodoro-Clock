@@ -1,0 +1,88 @@
+body {
+  background-color: #2eb0c0;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 20px;
+  min-width: 300px;
+}
+
+.sb-cont {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.sb-row {
+  margin: 10px;
+  padding: 15px 10px;
+  width: 40%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #323232;
+  border-radius: 5px;
+  color: white;
+}
+
+.sb-button {
+  font-size: 26px;
+  margin: 5px 5px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.sb-button:hover {
+  cursor: pointer;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.sb-title {
+  font-size: 22px;
+}
+
+.sb-number {
+  font-size: 40px;
+  color: white;
+  padding: 5px;
+}
+
+.timer-head {
+  font-size: 30px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid;
+  width: 50%;
+  text-align: center;
+  color: gainsboro;
+}
+
+.timer-num {
+  font-size: 85px;
+}
+
+.time-cont {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 500px;
+  background-color: #646464;
+  align-items: center;
+  padding: 40px;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #323232;
+}
+
+.btn-row {
+  color: gainsboro;
+  margin-top: 25px;
+}
