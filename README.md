@@ -1,5 +1,5 @@
 # Pomodoro-Clock
-**Demo:  https://codepen.io/acor07/full/JByPvo/
+**Demo:**  https://codepen.io/acor07/full/JByPvo/
 
 **Description:** A pomodoro clock
 * Created with React and Redux
